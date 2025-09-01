@@ -1,0 +1,78 @@
+*,
+html,
+body {
+  margin : 0;
+  padding: 0;
+}
+
+.cv {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.title {
+  background-color: aqua;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+.title h1 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.section {
+  margin: 20px auto;
+  width: 50%;
+  max-width: 800px;
+}
+
+.isi {
+  background-color: blue;
+  color: black;
+  padding: 10px;
+  margin: 20px;
+}
+
+.biodata {
+  margin: 15px auto;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.foto {
+  border-radius: 50%;
+  border: 5px solid  blue;
+  max-width: 150px;
+}
+
+/* https://youtu.be/Ed7i0we-V3g?si=6DG5LxvQkcz7oGik  bahan belajar saya untuk responsiv */
+@media (max-width: 451px) {
+  .section {
+    width: 50%;
+  }
+
+  .biodata {
+    display: block;
+  }
+
+  .biodata tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .biodata td {
+    display: block;
+    width: 100%;
+  }
+
+  .foto {
+    margin-top: 20px;
+    max-width: 150px;
+  }
+}
